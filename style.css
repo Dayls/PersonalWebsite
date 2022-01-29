@@ -3,8 +3,9 @@
 body {
     margin-left: 17%;
     margin-right: 17%;
-    min-width: 500px;
-    max-width: 1100px;
+
+    /* background: rgb(223,129,199);
+background: linear-gradient(90deg, rgba(223,129,199,1) 0%, rgba(121,9,109,1) 41%, rgba(0,212,255,1) 100%);  */
 }
 
 .header {
@@ -89,11 +90,31 @@ body {
     font-weight: bolder;
     word-spacing: 5px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    background-image: url("https://picsum.photos/200");
+    background-size: cover;
 }
 
 .project:hover {
+    background-image: none;
     background-color: lightcoral;
     cursor: pointer;
+}
+
+.project p {
+    color: black;
+    font-size: 20px;
+    text-shadow:
+    0.05em 0 white,
+    0 0.05em white,
+    -0.05em 0 white,
+    0 -0.05em white;
+}
+
+.project:hover p {
+    color: black;
+    font-size: 20px;
+    text-shadow: none;
 }
 
 .contact {
@@ -101,7 +122,7 @@ body {
     text-align: center;    
     font-size: 20px;
     font-weight: bold;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif; 
 }
 
 .contact a {
