@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./gradient.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/gradient.css">
     <title>Document</title>
 </head>
 <body onLoad="align_website_small_screen()" id="body">
@@ -14,22 +14,21 @@
         <h1>a <span style="color: brown;">Java</span> developer</h1>
     </div>
 
-    <div class="links">
+    <div id="links">
         
         <a style="margin-right: 15px;" href="#Projects">Projects</a>
         <a href="#Contact">Contact me</a>
         <a style="margin-left: 15px;" href="#About">About me</a>
     </div>
-
+    
     <div class="main">
-        <div class="about">
-            <h2 id="About">About me</h2>
+        <h2>About me</h2>
+        <div id="about" id="about">
             <p>I am a programmer with over 1 year of personal project development experience in the Java and .NET programming languages. I am always ready to learn new technologies and work on different types of projects.</p>
         </div>
 
-        <h2 id="Projects">Projects</h2>
-        <div class="projects">
-            
+        <h2>Projects</h2>
+        <div id="projects">
             <div onclick="location.href='https://google.com';" class="project" id="project1">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo!</p>
             </div>
@@ -60,8 +59,8 @@
             </div>
         </div>
 
-        <h2 id="Contact">Contact me</h2>
-        <div class="contact">
+        <h2>Contact me</h2>
+        <div id="contact">
             <p >e-mail: 
                 <a href="mailto:daniil.shmel@list.ru">daniil.shmel@list.ru</a>
             </p>
