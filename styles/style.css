@@ -91,14 +91,7 @@ background: linear-gradient(90deg, rgba(223,129,199,1) 0%, rgba(121,9,109,1) 41%
     word-spacing: 5px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 
-    background-image: url("https://picsum.photos/200");
     background-size: cover;
-}
-
-.project:hover {
-    background-image: none;
-    background-color: lightcoral;
-    cursor: pointer;
 }
 
 .project p {
@@ -109,6 +102,12 @@ background: linear-gradient(90deg, rgba(223,129,199,1) 0%, rgba(121,9,109,1) 41%
     0 0.05em white,
     -0.05em 0 white,
     0 -0.05em white;
+}
+
+.project:hover {
+    background-image: none !important;
+    /* background-color: lightcoral !important; */
+    cursor: pointer;
 }
 
 .project:hover p {

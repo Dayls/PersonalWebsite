@@ -1,0 +1,1 @@
+Participated in the Advent Of Code 2021 event by solving 4 exercises in it with Java
