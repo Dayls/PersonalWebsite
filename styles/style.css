@@ -3,9 +3,6 @@
 body {
     margin-left: 17%;
     margin-right: 17%;
-
-    /* background: rgb(223,129,199);
-background: linear-gradient(90deg, rgba(223,129,199,1) 0%, rgba(121,9,109,1) 41%, rgba(0,212,255,1) 100%);  */
 }
 
 .header {
@@ -75,7 +72,6 @@ background: linear-gradient(90deg, rgba(223,129,199,1) 0%, rgba(121,9,109,1) 41%
     column-gap: 1em;
     row-gap: 1em;
     min-height: 200px;
-    /* max-height: ; */
     margin-right: 1em;
     margin-left: 1em;
 }
@@ -106,7 +102,7 @@ background: linear-gradient(90deg, rgba(223,129,199,1) 0%, rgba(121,9,109,1) 41%
 
 .project:hover {
     background-image: none !important;
-    /* background-color: lightcoral !important; */
+    background-color: lightcoral !important;
     cursor: pointer;
 }
 
