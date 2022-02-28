@@ -1,0 +1,1 @@
+Address Book manager - the GUI program that allows you to create, edit and manage address books locally
