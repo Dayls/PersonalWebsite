@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+    margin-top: 50px;
+    border: 4px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header h1 {
+    color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+.body__footer {
+    border: 4px black solid;
+    border-top: 2px black solid;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.body__footer:hover span{
+    display: none;
+}
+
+.body__footer:hover::after{
+    content: "Back to top";
+} 

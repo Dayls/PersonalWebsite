@@ -5,67 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./common.blocks/header/header.css">
+    <link rel="stylesheet" href="./common.blocks/links/__link.css">
+    <link rel="stylesheet" href="./common.blocks/links/links.css">
+    <link rel="stylesheet" href="./common.blocks/links/_indent.css">
+    <link rel="stylesheet" href="common.blocks/main/__about.css">
+    <link rel="stylesheet" href="common.blocks/main/__contact-content.css">
+    <link rel="stylesheet" href="common.blocks/main/__contact.css">
+    <link rel="stylesheet" href="common.blocks/main/__description.css">
+    <link rel="stylesheet" href="common.blocks/main/__grid.css">
+    <link rel="stylesheet" href="common.blocks/main/__project-description.css">
+    <link rel="stylesheet" href="common.blocks/main/__project.css">
+    <link rel="stylesheet" href="common.blocks/main/__projects.css">
+    <link rel="stylesheet" href="common.blocks/main/__title.css">
+    <link rel="stylesheet" href="common.blocks/main/main.css">
+    <link rel="stylesheet" href="common.blocks/body/body.css">
+    <link rel="stylesheet" href="common.blocks/body/__footer.css">
     <link rel="stylesheet" href="./styles/gradient.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap">
     <title>Document</title>
 </head>
-<body onLoad="align_website_small_screen()" id="body">
+<body onLoad="align_website_small_screen()" >
     <div class="header" id="top">
         <h1>Hello, I'm Danil Mokhonko,</h1>
         <h1>a <span style="color: brown;">Java</span> developer</h1>
     </div>
 
-    <div id="links">
-        <a style="margin-right: 15px;" href="#projects">Projects</a>
-        <a href="#contact">Contact me</a>
-        <a style="margin-left: 15px;" href="#about">About me</a>
+    <div class="links">
+        <a class="links__link links__link_indent_right" href="#projects">Projects</a>
+        <a class="links__link" href="#contact">Contact me</a>
+        <a class="links__link links__link_indent_left"  href="#about">About me</a>
     </div>
     
     <div class="main">
-        <h2>About me</h2>
-        <div id="about" id="about">
-            <p>I am a programmer with over 1 year of personal project development experience in the Java and .NET programming languages. I am always ready to learn new technologies and work on different types of projects.</p>
+        <div class="main__about" id="about">
+            <h2 class="main__title" id="about">About me</h2>
+            <p class="main__description">
+                I am a programmer with over 1 year of personal project development experience in the Java and .NET programming languages. I am always ready to learn new technologies and work on different types of projects.
+            </p>
         </div>
+        </noneiv class="main__projects" >
+            <h2 class="main__title" id="projects">Projects</h2>
+            <div class="main__grid">
 
-        <h2>Projects</h2>
-        <div id="projects">
-            <div onclick="location.href='https://github.com/danilmoh/RandomImageApp';" class="project" id="project1"
-            style="background-image: url(https://i.imgur.com/d2x62Uz.png);">
-                <p>
-                    The random photo displayer program made with JavaFX GUI library
+                <div class="main__project" onclick="location.href='https://github.com/danilmoh/RandomImageApp';" style="background-image: url(https://i.imgur.com/d2x62Uz.png);">
+                    <p class="main__project-description">
+                        The random photo displayer program made with JavaFX GUI library
+                    </p>
+                </div>
+
+                <div class="main__project" onclick="location.href='https://github.com/danilmoh/AsteroidsGame/blob/main/README.md';" style="background-image: url(portfolio/asteroids_game/img.gif); background-repeat: repeat;">
+                    <p class="main__project-description">
+                        Asteroids - 2D game made with JavaFX library.
+                    </p>
+                </div>
+                
+                <div class="main__project" onclick="location.href='https://github.com/danilmoh/Advent-of-Code'" style="background-image: url(https://i.imgur.com/uT3G7xx.png);">
+                    <p class="main__project-description">
+                        Participated in the Advent Of Code 2021 event by solving 4 algorithmic exercises with Java and Kotlin languages
+                    </p>
+                </div>
+
+                <div class="main__project" onclick="location.href='https://github.com/danilmoh/TopDown2DGamePrototype'" style="background-image: url(portfolio/godot/img.gif);">
+                    <p class="main__project-description">
+                        Zelda-like game prototype made in Godot game engine with C#
+                    </p>
+                </div>
+
+                <div class="main__project" onclick="location.href='https://github.com/danilmoh/AddressBook/'" style="background-image: url(https://i.imgur.com/bWzLIj9.png);">
+                    <p class="main__project-description">
+                        Address Book manager - the GUI program that allows you to create, edit and manage address books locally
+                    </p>
+                </div>
+            </div>
+
+        <div class="main__contact" id="contact">
+            <h2 class="main__title">Contact me</h2>
+
+            <div class="main__contact-content">
+                <p>e-mail:
+                    <a href="mailto:daniil.shmel@list.ru">daniil.shmel@list.ru</a>
+                </p>
+
+                <p>github:
+                    <a class="github-button" href="https://github.com/danilmoh" aria-label="Follow @danilmoh on GitHub">Follow @danilmoh</a>
                 </p>
             </div>
-
-            <div onclick="location.href='https://github.com/danilmoh/AsteroidsGame/blob/main/README.md';" class="project" id="project2" style="background-image: url(portfolio/asteroids_game/img.gif); background-repeat: repeat;">
-                <p>Asteroids - 2D game made with JavaFX library.</p>
-            </div>
-
-            <div onclick="location.href='https://github.com/danilmoh/Advent-of-Code'" class="project" id="project3" style="background-image: url(https://i.imgur.com/uT3G7xx.png);">
-                <p>Participated in the Advent Of Code 2021 event by solving 4 algorithmic exercises with Java and Kotlin languages</p>
-            </div>
-
-            <div onclick="location.href='https://github.com/danilmoh/TopDown2DGamePrototype'" class="project" id="project4" style="background-image: url(portfolio/godot/img.gif);">
-                <p>Zelda-like game prototype made in Godot game engine with C#</p>
-            </div>
-
-            <div onclick="location.href='https://github.com/danilmoh/AddressBook/'" class="project" id="project5" style="background-image: url(https://i.imgur.com/bWzLIj9.png);">
-                <p>Address Book manager - the GUI program that allows you to create, edit and manage address books locally</p>
-            </div>
-        </div>
-
-        <h2>Contact me</h2>
-        <div id="contact">
-            <p >e-mail: 
-                <a href="mailto:daniil.shmel@list.ru">daniil.shmel@list.ru</a>
-            </p>
-            <p>github: 
-            <a class="github-button" href="https://github.com/Dayls" data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large" aria-label="Follow @Dayls on GitHub">Follow @Dayls</a>
-            </p>
         </div>
     </div>
 
-    <div onclick="location.href='#top'" class="footer">
+    <div onclick="location.href='#top'" class="body__footer">
         <span>
-            &copy;Danil Mokhonko, 2021
+            &copy;Danil Mokhonko, 2022
         </span>
     </div>
 

@@ -1,0 +1,13 @@
+.links {
+    border: 4px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
