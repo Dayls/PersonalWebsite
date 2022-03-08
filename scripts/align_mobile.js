@@ -1,7 +1,7 @@
 const b = document.body
 const about_me = document.getElementById("about")
-const projects = document.getElementById("projects");
-const project = document.getElementsByClassName("project")
+const projects = document.getElementsByClassName("main__grid");
+const project = document.getElementsByClassName("main__project")
 
 function align_website_small_screen() {
     
@@ -17,14 +17,13 @@ function align_website_small_screen() {
         applyNormalWindow();
     }
 
-    setTimeout('align_website_small_screen()', 1);
 }
 
 function applyMobileAlign() {
     about_me.style.paddingLeft = '3px';
     about_me.style.paddingRight = '3px';
 
-    projects.style.display = 'block';
+    projects[0].style.display = 'block';
     for( i = 0; i < project.length; i++) {
         project[i].style.marginTop = '1em';
     }
@@ -34,7 +33,7 @@ function applyNormalAlign() {
     about_me.style.paddingLeft = '100px';
     about_me.style.paddingRight = '100px';
 
-    projects.style.display = 'grid';
+    projects[0].style.display = 'grid';
     for( i = 0; i < project.length; i++) {
         project[i].style.marginTop = '0';
     }
