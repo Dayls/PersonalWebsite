@@ -8,7 +8,7 @@
     color: black;
     font-size: 20px;
     font-weight: lighter;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', Comfortaa, sans-serif;
 }
 
 .body__footer:hover span{
@@ -17,4 +17,4 @@
 
 .body__footer:hover::after{
     content: "Back to top";
-} 
+}
